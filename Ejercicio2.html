@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 Manuel Florido</title>
+    <style>
+        form{
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        fieldset{
+            border-color: #a2ff9a;
+            border-width: 4px;
+        }
+        h2 {
+            text-align: center;
+        } 
+        input{
+            width: 8%;
+        }
+        .clase{
+            width: 80px;
+        }
+        #reset{
+            background-color: red;
+            color: white;
+        }
+        #resolv{
+            background-color: green;
+            color: white;
+        }
+        body{
+            background-color: #d6d4d4;
+        }
+    </style>
+</head>
+<body>
+    <form id="formulario_ej2" method="post" action="Ejercicio2php.php" target="_blank">
+        <fieldset>
+        <legend>Ejercicio de cadenas</legend><br>
+
+            <label>Texto 1 → </label><input type="text" name="text1" placeholder="Escriba aquí"/>
+            <label>Texto 2 → </label><input type="text" name="text2" placeholder="Escriba aquí"/>
+            <label>Texto 3 → </label><input type="text" name="text3" placeholder="Escriba aquí"/>
+            <br><br>
+
+            <label>Elige una operación:</label>
+                <select name="operacion">
+                    <option hidden selected>Selecciona una opción</option>
+                    <option value="mayu">Convierte texto a mayúscula</option>
+                    <option value="deso">Desordenar el texto</option>
+                    <option value="array">Convertir cadena de texto en array</option>
+                    <option value="cuenta">Contar los carácteres del texto</option>
+                    <option value="reem">Reemplazar palabra del texto</option>
+                </select>
+            <br><br>
+
+            <label><input class="clase" type="submit" name="resolver" value="Resolver" id="resolv"/></label>
+            <label><input class="clase" type="reset" name="reset"  value="Reset" id="reset"/></label>
+            
+
+
+        </fieldset><br>
+    </form>
+</body>
+</html>
