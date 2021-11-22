@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 Manuel Florido</title>
+    <style>
+        form{
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        fieldset{
+            border-color: #a2ff9a;
+            border-width: 4px;
+        }
+        h2 {
+            text-align: center;
+        } 
+        input{
+            width: 6%;
+        }
+        .clase{
+            width: 130px;
+        }
+        #reset{
+            background-color: red;
+            color: white;
+        }
+        #resolv{
+            background-color: green;
+            color: white;
+        }
+        body{
+            background-color: #d6d4d4;
+        }
+    </style>
+</head>
+<body>
+    <form id="formulario_ej1" method="post" action="Ejercicio1php.php" target="_blank">
+        <fieldset>
+        <legend>Conversor de números</legend><br>
+            <label><b>Opción 1: Número Concreto</b></label><br>
+            <label>Número → </label><input type="text" name="num" placeholder="0"/>
+            <br><br>
+            <label><b>Opción 2: Número Aleatorio (0-2048)</b></label><br>
+            <label>Si</label><input type="radio" name="alea" value="Si"/>
+            <label>No</label><input type="radio" name="alea" value="No"/>
+            <br><br>
+
+            <label>Seleccione una operación:</label>
+                <select name="operacion">
+                    <option hidden selected>Selecciona una opción</option>
+                    <option value="dab">Decimal a Binario</option>
+                    <option value="dao">Decimal a Octal</option>
+                    <option value="dah">Decimal a Hexadecimal</option>
+                    <option value="bad">Binario a Decimal</option>
+                    <option value="oad">Octal a Decimal</option>
+                    <option value="had">Hexadecimal a Decimal</option>
+                </select>
+            <br><br>
+
+            <label><input class="clase" type="submit" name="resolver" value="Realizar conversión" id="resolv"/></label>
+            <label><input class="clase" type="reset" name="reset"  value="Restablecer valores" id="reset"/></label>
+            
+
+
+        </fieldset><br>
+    </form>
+</body>
+</html>
