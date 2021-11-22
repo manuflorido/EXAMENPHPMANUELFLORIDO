@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 Manuel Florido</title>
+    <style>
+        form{
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        fieldset{
+            border-color: #a2ff9a;
+            border-width: 4px;
+        }
+        h2 {
+            text-align: center;
+        } 
+        input{
+            width: 8%;
+        }
+        .clase{
+            width: 80px;
+        }
+        #reset{
+            background-color: red;
+            color: white;
+        }
+        #enviar{
+            background-color: green;
+            color: white;
+        }
+        body{
+            background-color: #d6d4d4;
+        }
+        .fecha{
+            width: 9%;
+        }
+    </style>
+</head>
+<body>
+    <form id="vuelos" method="post" action="Ejercicio3php.php" target="_blank">
+        <fieldset>
+        <legend>Ejercicio de Arrays</legend><br>
+        <fieldset>
+        <legend>Inicialización del Array</legend>
+            <label>Entrada 1 → </label><input type="text" name="array[ent1]" required placeholder="Escriba aquí"/><br>
+            <label>Entrada 2 → </label><input type="text" name="array[ent2]" required placeholder="Escriba aquí"/><br>
+            <label>Entrada 3 → </label><input type="text" name="array[ent3]" required placeholder="Escriba aquí"/><br>
+            <label>Entrada 4 → </label><input type="text" name="array[ent4]" required placeholder="Escriba aquí"/><br>
+            <label>Entrada 5 → </label><input type="text" name="array[ent5]" required placeholder="Escriba aquí"/>
+
+        </fieldset>
+
+            <br><br>
+
+        <fieldset>
+        <legend>Herramientas</legend>
+                <select name="operacion">
+                    <option hidden selected>Selecciona una opción</option>
+                    <option value="quip">Quitar primer elemento del array</option>
+                    <option value="quiu">Quitar último elemento del array</option>
+                    <option value="sorti">Ordena por sus claves en orden inverso</option>
+                    <option value="div">Divide el array en dos</option>
+                </select>
+        </fieldset>
+
+            <br><br>
+
+        </fieldset><br>
+            <label><input class="clase" type="submit" name="enviar" value="Enviar" id="enviar"/></label>
+            <label><input class="clase" type="reset" name="reset"  value="Reset" id="reset"/></label>
+    </form>
+</body>
+</html>
